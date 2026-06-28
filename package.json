@@ -1,0 +1,26 @@
+{
+  "name": "libro-amistad",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "framer-motion": "^12.42.0",
+    "lucide-react": "^1.21.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-pageflip": "^2.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "26.0.1",
+    "@types/react": "19.2.17",
+    "postcss": "^8.5.16",
+    "tailwindcss": "^4.3.1",
+    "typescript": "6.0.3"
+  }
+}

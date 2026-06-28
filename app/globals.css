@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* ======== COLORES DEL PROYECTO ======== */
+
+:root {
+
+  --wood: #7B5636;
+
+  --leather: #5C3B23;
+
+  --leather-dark: #3A2415;
+
+  --paper: #F7F1E5;
+
+  --paper-dark: #E9DFC8;
+
+  --gold: #C9A45D;
+
+  --text: #3B2C24;
+
+}
+
+/* ======== TAILWIND ======== */
+
+@theme inline {
+
+  --color-wood: var(--wood);
+
+  --color-leather: var(--leather);
+
+  --color-paper: var(--paper);
+
+  --color-paper-dark: var(--paper-dark);
+
+  --color-gold: var(--gold);
+
+  --color-text: var(--text);
+
+}
+
+/* ======== ESTILOS GENERALES ======== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+
+  width:100%;
+  height:100%;
+
+}
+
+body{
+
+  background:var(--wood);
+
+  color:var(--text);
+
+  overflow:hidden;
+
+  font-family:serif;
+
+}
