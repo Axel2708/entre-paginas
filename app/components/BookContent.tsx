@@ -232,12 +232,12 @@ export default function BookContent({
                 )}
 
                 {page.type === "letter" && "text" in page && (
-  <Letter text={page.text} />
+  <Letter text={page.text ?? ""} />
 )}
 
       {page.type === "funny" && "leftNotes" in page && (
   <div className="mt-4 grid grid-cols-2 gap-2">
-    {page.leftNotes.map((note) => (
+    {(page.leftNotes ?? []).map((note) => (
       <StickyNote
         key={note.title}
         title={note.title}
