@@ -222,7 +222,7 @@ export default function BookContent({
                 )}
 
                 {page.type === "typewriter" && "text" in page && (
-                  <TypeWriter text={page.text} />
+                  <TypeWriter text={page.text ?? ""} />
                 )}
 
                 {page.type === "normal" && "text" in page && (
