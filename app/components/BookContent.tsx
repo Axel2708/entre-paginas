@@ -253,7 +253,7 @@ export default function BookContent({
 
                 {page.type === "photos" && "leftPhotos" in page && (
                   <div className="mt-4 grid grid-cols-2 gap-4">
-                    {page.leftPhotos.map((photo) => (
+                    {(page.leftPhotos ?? []).map((photo) => (
                       <Polaroid
                         key={photo.src}
                         src={photo.src}
@@ -266,7 +266,7 @@ export default function BookContent({
 
                 {page.type === "index" && "chapters" in page && (
                   <div className="mt-8 space-y-4">
-                    {page.chapters.map((chapter) => (
+                    {(page.chapters ?? []).map((chapter) => (
                       <button
                         key={chapter.page}
                         onClick={() => setCurrentPage(chapter.page)}
@@ -302,17 +302,17 @@ export default function BookContent({
   <div className="flex h-full items-center justify-center px-6">
     <div className="w-[85%]">
       <Polaroid
-        src={page.rightPolaroid.src}
-        caption={page.rightPolaroid.caption}
-        rotate={page.rightPolaroid.rotate}
-        variant="large"
-      />
+  src={page.rightPolaroid!.src}
+  caption={page.rightPolaroid!.caption}
+  rotate={page.rightPolaroid!.rotate}
+  variant="large"
+/>
     </div>
   </div>
 )}
               {isPhotoPage && "rightPhotos" in page && (
                 <div className="grid grid-cols-2 gap-4 pt-10">
-                  {page.rightPhotos.map((photo) => (
+                  {(page.rightPhotos ?? []).map((photo) => (
                     <Polaroid
                       key={photo.src}
                       src={photo.src}
