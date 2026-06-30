@@ -80,7 +80,7 @@ Si alguna vez todo se va, en este libro encontrarás los momentos lindos que pas
     { title: "Frase 4", text: "Huye , venado.", rotate: "rotate-1" },
     { title: "Frase 5", text: "Collelle collelle.", rotate: "-rotate-1" },
     { title: "Frase 6", text: "Tonoto.", rotate: "rotate-1" },
-    { title: "Frase 7", text: "Abacho y pecho.", rotate: "-rotate-1" },
+    { title: "Frase 7", text: "Abacho y becho.", rotate: "-rotate-1" },
     { title: "Frase 8", text: "Por partes como jack.", rotate: "rotate-1" },
     { title: "Frase 9", text: "Te quiero tanto que te comería.", rotate: "-rotate-1" },
     { title: "Frase 10", text: "Snoopido.", rotate: "rotate-1" },
